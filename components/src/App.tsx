@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-    <Button>Get Started</Button>
+    <div className="mx-40 my-40"><Button variant={'link'}>Get Started</Button></div>
      </>
   )
 }

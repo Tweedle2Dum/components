@@ -1,14 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --primary: hsl(0, 0%, 100%);
+    --primary-hover: hsla(0, 0%, 100%, 0.753);
+    --secondary: hsl(278, 72%, 49%);
+    --secondary-hover: hsl(278, 92%, 34%);
+    --background: hsl(0, 0%, 0%);
+    --surface: hsl(0, 0%, 7.06%);
+    --font-color: hsl(0, 0%, 79.61%);
+  }
 
-:root {
-    --primary:  ; 
-    --secondary: ; 
-    --tertiary: ; 
-    --background: #000000 ; 
-    --surface:  #121212; 
-
+  body {
+    background-color: var(--background);
+  }
 }
